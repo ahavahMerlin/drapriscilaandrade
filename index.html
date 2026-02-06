@@ -146,24 +146,50 @@
 
 
 <!-- FAQ -->
-<section>
+<section class="faq">
   <h2>Perguntas Frequentes</h2>
 
   <details>
-    <summary>O implante dentário dói?</summary>
-    <p>O procedimento é realizado com anestesia e é seguro.</p>
+    <summary>Atende Planos de Saúde?</summary>
+    <p>Não. O atendimento é exclusivamente particular, garantindo mais qualidade e personalização no tratamento.</p>
   </details>
 
   <details>
-    <summary>Atende convênios?</summary>
-    <p>Não. Atendimento exclusivamente particular.</p>
+    <summary>Qual o valor do implante dentário?</summary>
+    <p>O valor varia conforme cada caso. É necessário realizar uma avaliação para definir o melhor plano de tratamento.</p>
   </details>
 
   <details>
-    <summary>Quanto tempo dura o tratamento?</summary>
-    <p>Depende de cada caso, avaliado em consulta.</p>
+    <summary>Posso parcelar o implante ou a prótese?</summary>
+    <p>Sim. O pagamento pode ser parcelado. As condições são explicadas durante a avaliação.</p>
+  </details>
+
+  <details>
+    <summary>Qual a diferença do implante para a prótese?</summary>
+    <p>
+      O implante substitui a raiz do dente, sendo fixado no osso. 
+      A prótese é a parte visível que substitui o dente.
+      Muitas vezes, os dois trabalham juntos.
+    </p>
+  </details>
+
+  <details>
+    <summary>O procedimento de implante dentário é doloroso?</summary>
+    <p>
+      Não. O procedimento é realizado com anestesia e técnicas modernas,
+      proporcionando conforto e segurança ao paciente.
+    </p>
+  </details>
+
+  <details>
+    <summary>Qual a diferença entre o implante dentário e a dentadura móvel?</summary>
+    <p>
+      O implante é fixo, mais confortável e seguro.
+      A dentadura móvel pode causar desconforto e instabilidade.
+    </p>
   </details>
 </section>
+
 
 <!-- FOTOS -->
 <section>
@@ -262,6 +288,29 @@
 <a href="https://wa.me/5548991302076" class="whatsapp-float" target="_blank">
   WhatsApp
 </a>
+
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll('.carousel-image');
+    let current = 0;
+
+    if (images.length === 0) return;
+
+    images[current].classList.add('active');
+
+    setInterval(() => {
+      images[current].classList.remove('active');
+      current = (current + 1) % images.length;
+      images[current].classList.add('active');
+    }, 3000);
+  });
+</script>
+
+</body>
+</html>
+
 
 </body>
 </html>
