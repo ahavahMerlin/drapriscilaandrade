@@ -130,9 +130,10 @@ section {
   position: relative;
   width: 100%;
   max-width: 450px;
-  height: 300px;
+  height: 420px; /* MAIS ALTO */
   overflow: hidden;
   border-radius: 12px;
+  background-color: #f9f9f9;
 }
 
 .carousel-image {
